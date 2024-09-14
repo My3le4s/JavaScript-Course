@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart_Quantity</title>
+</head>
+<body>
+    <button onclick="console.log(`Cart quantity : ${cartQuantity}`);">Show quantity</button>
+    <!--The console.log only displays the console tab-->
+
+    <button onclick="
+    cartQuantity = cartQuantity + 1;
+    console.log(`Cart quantity : ${cartQuantity}`)">Add to cart</button>
+
+    <button onclick="
+     cartQuantity = cartQuantity + 2;
+     // cartQuantity +=2. This is similar to the line above
+     console.log(`Cart quantity : ${cartQuantity}`)">+2</button>
+
+    <button onclick="
+     cartQuantity = cartQuantity + 3;
+     console.log(`Cart quantity : ${cartQuantity}`)">+3</button>
+
+    <button onclick="
+    cartQuantity = 0;
+    console.log('cart was reset');
+    console.log(`Cart quantity : ${cartQuantity}`)">Reset cart</button>
+
+    <script>
+         let cartQuantity = 0;
+         // This `let` enables us to create a variable
+
+         const One = 8
+         // The const is used similarly to `let` but it can't be changed like a let can
+
+         var two = 0
+         // This can also be used in creating variables
+
+         console.log('typeof One');
+         //The typeof atttribute is used to show if a value is a string or a template.
+
+         // Console.log will always be used to display something in the console tab
+    </script>
+
+</body>
+</html>
